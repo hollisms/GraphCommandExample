@@ -56,6 +56,7 @@ public class Arm extends SubsystemBase {
     m_graphCommand.addRequirements(this);
     this.setDefaultCommand(m_graphCommand);
     m_graphCommand.setCurrentNode(A);
+    m_graphCommand.initialize();
   }
 
   private Timer m_testTimer = new Timer();
